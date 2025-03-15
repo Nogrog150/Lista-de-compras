@@ -1,0 +1,64 @@
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.75rem;
+  gap: 1rem;
+}
+
+#form input {
+  height: 2.75rem;
+  width: 28.1875rem;
+  border-radius: 0.625rem;
+}
+
+.input_button {
+  display: flex;
+  gap: 1rem;
+}
+
+.button_submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.75rem;
+  width: 160px;
+  border-radius: 0.625rem;
+  background-color: var(--color-brand);
+  transition: background-color 0.3s ease; /* Suaviza a transição do background */
+}
+
+.button_submit p {
+  color: var(--always-white);
+  background-color: var(--color-brand); /* Garante que o p tenha o mesmo fundo inicialmente */
+  margin: 0; /* Remove margens para evitar o deslocamento do p */
+  transition: background-color 0.3s ease; /* Suaviza a transição do fundo no p */
+}
+
+.button_submit:hover {
+  background-color: var(--color-brand-hover);
+}
+
+.button_submit:hover p {
+  background-color: var(--color-brand-hover); /* Garante que o p tenha o fundo correto no hover */
+}
+
+@media (max-width: 1024px) {
+  #form {
+    flex-direction: column;
+  }
+
+  .button_submit {
+    height: 2.75rem;
+    width: 626px;
+    border-radius: 0.625rem;
+    background-color: var(--color-brand);
+    margin-top: 1rem;
+  }
+
+  #form input {
+    height: 2.75rem;
+    width: 626px;
+    border-radius: 0.625rem;
+  }
+}

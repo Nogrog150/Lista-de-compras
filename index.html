@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Lista de compra</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logo quick list" />
+    </header>
+
+    <main>
+      <section class="titulo" id="titulo">
+        <div class="voltar_titulo">
+          <i class="fa-solid fa-arrow-left" style="color: #ca3884"></i>
+          <p>Voltar</p>
+        </div>
+        <div>
+          <h1>Compras da semana</h1>
+        </div>
+      </section>
+
+      <section id="form">
+        <form action="" >
+          <div class="input_button">
+            <input type="text" placeholder="  Adicione um novo um item" />
+            <button class="button_submit" type="submit">
+              <p>Adicionar item</p>
+            </button>
+          </div>
+
+          <ul class="shopping-list">
+            <li class="shopping-item">
+              <input type="checkbox" id="item1" class="item-checkbox" />
+              <label for="item1">Maçãs</label>
+              <i class="fa-solid fa-trash-can trash"></i>
+            </li>
+            <li class="shopping-item">
+              <input type="checkbox" id="item2" class="item-checkbox" />
+              <label for="item2">Bananas</label>
+              <i class="fa-solid fa-trash-can trash"></i>
+            </li>
+            <li class="shopping-item">
+              <input type="checkbox" id="item3" class="item-checkbox" />
+              <label for="item3">Leite</label>
+              <i class="fa-solid fa-trash-can trash"></i>
+            </li>
+          </ul>
+          <div class="alert_del ">
+            <i class="fa-solid fa-circle-exclamation expression"></i><p>O item foi removido da lista</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/211364355a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

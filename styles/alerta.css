@@ -1,0 +1,25 @@
+.alert_del {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  background-color: var(--color-danger);
+  border-radius: 0.625rem;
+  height: 2.75rem;
+  width: 39.1875rem;
+  color: var(--always-white);
+  gap: 0.3125rem;
+}
+
+.alert_del p {
+  background-color: var(--color-danger);
+  font-size: var(--font-size-small);
+}
+
+.expression {
+  background-color: var(--color-danger);
+  margin-left: 1.25rem;
+}
+
+.hide {
+  display: none;
+}

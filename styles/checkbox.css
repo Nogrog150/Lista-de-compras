@@ -1,0 +1,76 @@
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-secondary);
+  color: var(--content-secondary);
+  border-radius: 12px;
+}
+
+.item-checkbox {
+  display: none;  /* O checkbox real será oculto */
+}
+
+/* Arredondamento da borda e fundo do label */
+.item-checkbox + label {
+  display: flex;
+  align-items: center;  /* Alinha o checkbox e o texto verticalmente no centro */
+  position: relative;
+  padding-left: 55px;  /* Aumente o padding para criar espaço entre o checkbox e o texto */
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--background-secondary);
+  height: 57px;
+  width: 327px;
+  border-radius: 40px;  /* Arredondamento das bordas do fundo do label */
+  overflow: hidden;  /* Garante que o conteúdo dentro da label não ultrapasse as bordas arredondadas */
+}
+
+/* Caixa customizada (representando o checkbox visual) */
+.item-checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: 10px;  /* Ajuste a posição horizontal do checkbox */
+  top: 50%;
+  transform: translateY(-50%);  /* Alinha o checkbox verticalmente no centro */
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border-primary);
+  border-radius: 5px;  /* Arredondamento das bordas do checkbox */
+  background-color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo quando o checkbox é marcado */
+.item-checkbox:checked + label:before {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  content: "✔";  /* Adiciona o símbolo de verificação quando o checkbox é marcado */
+  font-size: 14px;
+  color: white;  /* Cor do símbolo de verificação */
+  text-align: center;
+  line-height: 16px;  /* Centraliza o símbolo dentro do checkbox */
+}
+
+/* Efeito de hover */
+.item-checkbox + label:hover:before {
+  border-color: var(--border-secondary);
+}
+
+.trash {
+  cursor: pointer;
+  margin-left: 260px;
+}
+
+@media (max-width: 1024px) {
+  .trash {
+    margin-right: 10px;
+  }
+}
