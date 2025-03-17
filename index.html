@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/list-icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,31 +32,16 @@
       <section id="form">
         <form action="" >
           <div class="input_button">
-            <input type="text" placeholder="  Adicione um novo um item" />
+            <input id="add_input" type="text" placeholder="  Adicione um novo um item" />
             <button class="button_submit" type="submit">
               <p>Adicionar item</p>
             </button>
           </div>
 
           <ul class="shopping-list">
-            <li class="shopping-item">
-              <input type="checkbox" id="item1" class="item-checkbox" />
-              <label for="item1">Maçãs</label>
-              <i class="fa-solid fa-trash-can trash"></i>
-            </li>
-            <li class="shopping-item">
-              <input type="checkbox" id="item2" class="item-checkbox" />
-              <label for="item2">Bananas</label>
-              <i class="fa-solid fa-trash-can trash"></i>
-            </li>
-            <li class="shopping-item">
-              <input type="checkbox" id="item3" class="item-checkbox" />
-              <label for="item3">Leite</label>
-              <i class="fa-solid fa-trash-can trash"></i>
-            </li>
           </ul>
-          <div class="alert_del ">
-            <i class="fa-solid fa-circle-exclamation expression"></i><p>O item foi removido da lista</p>
+          <div class="alert_del hide">
+            <i class="fa-solid fa-circle-exclamation expression "></i><p>O item foi removido da lista</p>
           </div>
         </form>
       </section>
